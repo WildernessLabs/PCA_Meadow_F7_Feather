@@ -1,0 +1,623 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 2 5
+Title "F7 Micro Embed"
+Date "2019-06-15"
+Rev "A"
+Comp ""
+Comment1 "S.Johnson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SLJ_Memory:IS42S16160J-7BLI U2
+U 1 1 5D05D92C
+P 5200 6700
+F 0 "U2" H 5200 10065 50  0000 C CNN
+F 1 "IS42S16160J-7BLI" H 5200 9974 50  0000 C CNN
+F 2 "SLJ_BGA:TFBGA-54" H 5200 6700 50  0001 C CNN
+F 3 "http://www.issi.com/WW/pdf/42-45S83200J-16160J.pdf" H 5200 6700 50  0001 C CNN
+F 4 "ISSI, Integrated Silicon Solution Inc" H 5200 6700 50  0001 C CNN "Man"
+F 5 "IS42S16160J-7BLI" H 5200 6700 50  0001 C CNN "PN"
+F 6 "ISSI, Integrated Silicon Solution Inc" H 250 0   50  0001 C CNN "MF"
+	1    5200 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SLJ_Memory:S25FL256LAG U3
+U 1 1 5D06BD9A
+P 9500 5500
+F 0 "U3" H 9550 6250 50  0000 C CNN
+F 1 "S25FL256LAG" H 9800 5400 50  0000 C CNN
+F 2 "SLJ_BGA:BGA24C100P6X4_800X600X120N" H 9300 5300 50  0001 C CNN
+F 3 "https://www.cypress.com/file/316171/download" H 9300 5300 50  0001 C CNN
+F 4 "Cypress Semiconductor Corp" H 9950 5300 50  0001 C CNN "MF"
+F 5 "S25FL256LAGBHV030" H 9850 5200 50  0001 C CNN "PN"
+	1    9500 5500
+	1    0    0    -1  
+$EndComp
+Text Label 8400 4700 0    50   ~ 0
+QUAD_SPI.IO[0..3]
+Entry Wire Line
+	8400 4800 8500 4900
+Entry Wire Line
+	8400 4900 8500 5000
+Entry Wire Line
+	8400 5000 8500 5100
+Entry Wire Line
+	8400 5100 8500 5200
+Wire Wire Line
+	8500 4900 9300 4900
+Wire Wire Line
+	8500 5000 9300 5000
+Wire Wire Line
+	8500 5200 9300 5200
+Text Label 9200 4900 2    50   ~ 0
+QUAD_SPI.IO0
+Wire Wire Line
+	10500 4900 10800 4900
+Wire Wire Line
+	10800 4900 10800 4750
+$Comp
+L SLJ_Pwr_symbols:+3V3 #PWR02
+U 1 1 5D097E2C
+P 10800 4400
+F 0 "#PWR02" H 11131 4324 50  0001 C CNN
+F 1 "+3V3" H 10815 4603 50  0000 C CNN
+F 2 "" H 10800 4400 50  0001 C CNN
+F 3 "" H 10800 4400 50  0001 C CNN
+	1    10800 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 8400 4600 0    50   BiDi ~ 0
+QUAD_SPI.IO[0..3]
+Wire Wire Line
+	10500 5000 12000 5000
+Wire Wire Line
+	12000 5100 10500 5100
+Text Label 11400 5000 2    50   ~ 0
+QUAD_SPI.SCK
+Text Label 11400 5100 2    50   ~ 0
+QUAD_SPI.CS_L
+Wire Wire Line
+	8500 5100 9300 5100
+Text Label 9200 5000 2    50   ~ 0
+QUAD_SPI.IO1
+Text Label 9200 5100 2    50   ~ 0
+QUAD_SPI.IO2
+Text Label 9200 5200 2    50   ~ 0
+QUAD_SPI.IO3
+Wire Wire Line
+	10500 5400 10800 5400
+Wire Wire Line
+	10800 5400 10800 5450
+$Comp
+L power:GND #PWR0101
+U 1 1 5D09B286
+P 10800 5600
+F 0 "#PWR0101" H 10800 5350 50  0001 C CNN
+F 1 "GND" H 10805 5427 50  0000 C CNN
+F 2 "" H 10800 5600 50  0001 C CNN
+F 3 "" H 10800 5600 50  0001 C CNN
+	1    10800 5600
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	6300 3600 6400 3700
+Entry Wire Line
+	6300 3700 6400 3800
+Entry Wire Line
+	6300 3800 6400 3900
+Entry Wire Line
+	6300 3900 6400 4000
+Entry Wire Line
+	6300 4000 6400 4100
+Entry Wire Line
+	6300 4100 6400 4200
+Entry Wire Line
+	6300 4200 6400 4300
+Entry Wire Line
+	6300 4300 6400 4400
+Entry Wire Line
+	6300 4400 6400 4500
+Entry Wire Line
+	6300 4500 6400 4600
+Entry Wire Line
+	6300 4600 6400 4700
+Entry Wire Line
+	6300 4700 6400 4800
+Entry Wire Line
+	6300 4800 6400 4900
+Entry Wire Line
+	6300 4900 6400 5000
+Entry Wire Line
+	6300 5000 6400 5100
+Entry Wire Line
+	6300 5100 6400 5200
+Wire Wire Line
+	5700 3600 6300 3600
+Wire Wire Line
+	5700 3700 6300 3700
+Wire Wire Line
+	5700 3800 6300 3800
+Wire Wire Line
+	5700 3900 6300 3900
+Wire Wire Line
+	5700 4000 6300 4000
+Wire Wire Line
+	5700 4100 6300 4100
+Wire Wire Line
+	5700 4200 6300 4200
+Wire Wire Line
+	5700 4300 6300 4300
+Wire Wire Line
+	5700 4400 6300 4400
+Wire Wire Line
+	5700 4500 6300 4500
+Wire Wire Line
+	5700 4600 6300 4600
+Wire Wire Line
+	5700 4700 6300 4700
+Wire Wire Line
+	5700 4800 6300 4800
+Wire Wire Line
+	5700 4900 6300 4900
+Wire Wire Line
+	5700 5000 6300 5000
+Wire Wire Line
+	5700 5100 6300 5100
+Text Label 6100 3600 2    50   ~ 0
+RAM.DQ0
+Text Label 6100 3700 2    50   ~ 0
+RAM.DQ1
+Text Label 6100 3800 2    50   ~ 0
+RAM.DQ2
+Text Label 6100 3900 2    50   ~ 0
+RAM.DQ3
+Text Label 6100 4000 2    50   ~ 0
+RAM.DQ4
+Text Label 6100 4100 2    50   ~ 0
+RAM.DQ5
+Text Label 6100 4200 2    50   ~ 0
+RAM.DQ6
+Text Label 6100 4300 2    50   ~ 0
+RAM.DQ7
+Text Label 6100 4400 2    50   ~ 0
+RAM.DQ8
+Text Label 6100 4500 2    50   ~ 0
+RAM.DQ9
+Text Label 6100 4600 2    50   ~ 0
+RAM.DQ10
+Text Label 6100 4700 2    50   ~ 0
+RAM.DQ11
+Text Label 6100 4800 2    50   ~ 0
+RAM.DQ12
+Text Label 6100 4900 2    50   ~ 0
+RAM.DQ13
+Text Label 6100 5000 2    50   ~ 0
+RAM.DQ14
+Text Label 6100 5100 2    50   ~ 0
+RAM.DQ15
+Wire Wire Line
+	5700 5300 6300 5300
+Wire Wire Line
+	5700 5400 6300 5400
+Text Label 6100 5300 2    50   ~ 0
+RAM.DQMH
+Text Label 6100 5400 2    50   ~ 0
+RAM.DQML
+Entry Wire Line
+	3900 3500 4000 3600
+Entry Wire Line
+	3900 3600 4000 3700
+Entry Wire Line
+	3900 3700 4000 3800
+Entry Wire Line
+	3900 3800 4000 3900
+Entry Wire Line
+	3900 3900 4000 4000
+Entry Wire Line
+	3900 4000 4000 4100
+Entry Wire Line
+	3900 4100 4000 4200
+Entry Wire Line
+	3900 4200 4000 4300
+Entry Wire Line
+	3900 4300 4000 4400
+Entry Wire Line
+	3900 4400 4000 4500
+Entry Wire Line
+	3900 4500 4000 4600
+Entry Wire Line
+	3900 4600 4000 4700
+Entry Wire Line
+	3900 4700 4000 4800
+Entry Wire Line
+	3900 4800 4000 4900
+Entry Wire Line
+	3900 4900 4000 5000
+Entry Wire Line
+	3900 5000 4000 5100
+Wire Wire Line
+	4000 3600 4700 3600
+Wire Wire Line
+	4000 3700 4700 3700
+Wire Wire Line
+	4000 3800 4700 3800
+Wire Wire Line
+	4000 3900 4700 3900
+Wire Wire Line
+	4000 4000 4700 4000
+Wire Wire Line
+	4000 4100 4700 4100
+Wire Wire Line
+	4000 4200 4700 4200
+Wire Wire Line
+	4000 4300 4700 4300
+Wire Wire Line
+	4000 4400 4700 4400
+Wire Wire Line
+	4000 4500 4700 4500
+Wire Wire Line
+	4000 4600 4700 4600
+Wire Wire Line
+	4000 4700 4700 4700
+Wire Wire Line
+	4000 4800 4700 4800
+Wire Wire Line
+	4000 4900 4700 4900
+Wire Wire Line
+	4000 5000 4700 5000
+Wire Wire Line
+	4000 5100 4700 5100
+Wire Wire Line
+	4000 5300 4700 5300
+Wire Wire Line
+	4000 5600 4700 5600
+Wire Wire Line
+	4000 5700 4700 5700
+Wire Wire Line
+	4000 5800 4700 5800
+Text Label 4500 3600 2    50   ~ 0
+RAM.A0
+Text Label 4500 3700 2    50   ~ 0
+RAM.A1
+Text Label 4500 3800 2    50   ~ 0
+RAM.A2
+Text Label 4500 3900 2    50   ~ 0
+RAM.A3
+Text Label 4500 4000 2    50   ~ 0
+RAM.A4
+Text Label 4500 4100 2    50   ~ 0
+RAM.A5
+Text Label 4500 4200 2    50   ~ 0
+RAM.A6
+Text Label 4500 4300 2    50   ~ 0
+RAM.A7
+Text Label 4500 4400 2    50   ~ 0
+RAM.A8
+Text Label 4500 4500 2    50   ~ 0
+RAM.A9
+Text Label 4500 4600 2    50   ~ 0
+RAM.A10
+Text Label 4500 4700 2    50   ~ 0
+RAM.A11
+Text Label 4500 4800 2    50   ~ 0
+RAM.A12
+Text Label 4500 4900 2    50   ~ 0
+RAM.A13
+Text Label 4500 5000 2    50   ~ 0
+RAM.A14
+Text Label 4500 5100 2    50   ~ 0
+RAM.A15
+Text Label 4500 5300 2    50   ~ 0
+RAM.CLK
+Text Label 4500 5400 2    50   ~ 0
+RAM.CKE
+Text Label 4500 5500 2    50   ~ 0
+RAM.CAS_L
+Text Label 4500 5600 2    50   ~ 0
+RAM.RAS_L
+Text Label 4500 5700 2    50   ~ 0
+RAM.WE_L
+Text Label 4500 5800 2    50   ~ 0
+RAM.CS_L
+Wire Wire Line
+	4700 6000 3800 6000
+Wire Wire Line
+	3800 6100 3800 6000
+Wire Wire Line
+	3800 6200 3800 6100
+Wire Wire Line
+	3800 6300 3800 6200
+Wire Wire Line
+	4700 6200 3800 6200
+Connection ~ 3800 6200
+Wire Wire Line
+	4700 6300 3800 6300
+Wire Wire Line
+	4700 6400 3800 6400
+Wire Wire Line
+	4700 6500 3800 6500
+Wire Wire Line
+	4700 6600 4500 6600
+Wire Wire Line
+	3800 6600 3800 6500
+Connection ~ 3800 6300
+Connection ~ 3800 6400
+Wire Wire Line
+	3800 6400 3800 6300
+Connection ~ 3800 6500
+Wire Wire Line
+	3800 6500 3800 6400
+Wire Wire Line
+	3800 6000 3300 6000
+Wire Wire Line
+	3300 6000 3300 5700
+Connection ~ 3800 6000
+$Comp
+L SLJ_Pwr_symbols:+3V3 #PWR0102
+U 1 1 5D0C02DE
+P 3300 5700
+F 0 "#PWR0102" H 3631 5624 50  0001 C CNN
+F 1 "+3V3" H 3315 5903 50  0000 C CNN
+F 2 "" H 3300 5700 50  0001 C CNN
+F 3 "" H 3300 5700 50  0001 C CNN
+	1    3300 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6100 4700 6100
+Connection ~ 3800 6100
+Wire Wire Line
+	5700 6000 6400 6000
+Wire Wire Line
+	6400 6000 6400 6100
+Wire Wire Line
+	5700 6100 6400 6100
+Connection ~ 6400 6100
+Wire Wire Line
+	6400 6100 6400 6200
+Wire Wire Line
+	5700 6200 6400 6200
+Connection ~ 6400 6200
+Wire Wire Line
+	6400 6200 6400 6300
+Wire Wire Line
+	5700 6300 6400 6300
+Connection ~ 6400 6300
+Wire Wire Line
+	6400 6300 6400 6400
+Wire Wire Line
+	5700 6400 6400 6400
+Connection ~ 6400 6400
+Wire Wire Line
+	6400 6400 6400 6500
+Wire Wire Line
+	5700 6500 6400 6500
+Connection ~ 6400 6500
+Wire Wire Line
+	6400 6500 6400 6600
+Wire Wire Line
+	5700 6600 6400 6600
+Connection ~ 6400 6600
+Wire Wire Line
+	6400 6600 6400 7000
+$Comp
+L power:GND #PWR0103
+U 1 1 5D0D820B
+P 6400 7000
+F 0 "#PWR0103" H 6400 6750 50  0001 C CNN
+F 1 "GND" H 6405 6827 50  0000 C CNN
+F 2 "" H 6400 7000 50  0001 C CNN
+F 3 "" H 6400 7000 50  0001 C CNN
+	1    6400 7000
+	1    0    0    -1  
+$EndComp
+Text Label 3900 3400 1    50   ~ 0
+RAM.A[0..15]
+Wire Bus Line
+	3900 5100 3300 5100
+Text HLabel 3300 5100 0    50   Input ~ 0
+RAM.A[0..15]
+Wire Wire Line
+	4000 5400 4700 5400
+Text HLabel 4000 5300 0    50   Input ~ 0
+RAM.CLK
+Text HLabel 4000 5400 0    50   Input ~ 0
+RAM.CKE
+Text HLabel 4000 5600 0    50   Input ~ 0
+RAM.RAS_L
+Text HLabel 4000 5700 0    50   Input ~ 0
+RAM.WE_L
+Text HLabel 4000 5800 0    50   Input ~ 0
+RAM.CS_L
+Text Label 6400 3500 1    50   ~ 0
+RAM.DQ[0..15]
+Text HLabel 6300 5400 2    50   Input ~ 0
+RAM.DQML
+Text HLabel 6300 5300 2    50   Input ~ 0
+RAM.DQMH
+Text HLabel 12000 5000 2    50   Input ~ 0
+QUAD_SPI.SCK
+Text HLabel 12000 5100 2    50   Input ~ 0
+QUAD_SPI.CS_L
+NoConn ~ 10500 5300
+Text HLabel 6400 3000 2    50   BiDi ~ 0
+RAM_DQ[0..15]
+$Comp
+L SLJ_Capacitor_0201:C_0201_0.1UF_10V_X5R C30
+U 1 1 5DC190F0
+P 3950 6950
+F 0 "C30" H 4065 7137 50  0000 L CNN
+F 1 "C_0201_0.1UF_10V_X5R" H 4350 6500 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0201" H 3988 6850 50  0001 C CNN
+F 3 "~" H 3950 7000 50  0001 C CNN
+F 4 "Murata Electronics North America" H 4850 6300 50  0001 C CNN "MF"
+F 5 "GRM033R61A104KE15D" H 4750 6400 50  0001 C CNN "PN"
+F 6 "Samsung Electro-Mechanics" H 4750 6200 50  0001 C CNN "MF2"
+F 7 "CL03A104KP3NNNC" H 4550 6100 50  0001 C CNN "PN2"
+F 8 "10V" H 4065 7046 50  0000 L CNN "Voltage"
+F 9 "10%" H 4250 6700 50  0001 C CNN "Tolerance"
+F 10 "0.1uF" H 4065 6955 50  0000 L CNN "Cap_value"
+F 11 "0201" H 4065 6864 50  0000 L CNN "Size"
+	1    3950 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SLJ_Capacitor_0201:C_0201_0.1UF_10V_X5R C31
+U 1 1 5DC1A8DB
+P 4500 6950
+F 0 "C31" H 4615 7137 50  0000 L CNN
+F 1 "C_0201_0.1UF_10V_X5R" H 4900 6500 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0201" H 4538 6850 50  0001 C CNN
+F 3 "~" H 4500 7000 50  0001 C CNN
+F 4 "Murata Electronics North America" H 5400 6300 50  0001 C CNN "MF"
+F 5 "GRM033R61A104KE15D" H 5300 6400 50  0001 C CNN "PN"
+F 6 "Samsung Electro-Mechanics" H 5300 6200 50  0001 C CNN "MF2"
+F 7 "CL03A104KP3NNNC" H 5100 6100 50  0001 C CNN "PN2"
+F 8 "10V" H 4615 7046 50  0000 L CNN "Voltage"
+F 9 "10%" H 4800 6700 50  0001 C CNN "Tolerance"
+F 10 "0.1uF" H 4615 6955 50  0000 L CNN "Cap_value"
+F 11 "0201" H 4615 6864 50  0000 L CNN "Size"
+	1    4500 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SLJ_Capacitor_0201:C_0201_0.1UF_10V_X5R C29
+U 1 1 5DC1AD07
+P 3350 6950
+F 0 "C29" H 3465 7137 50  0000 L CNN
+F 1 "C_0201_0.1UF_10V_X5R" H 3750 6500 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0201" H 3388 6850 50  0001 C CNN
+F 3 "~" H 3350 7000 50  0001 C CNN
+F 4 "Murata Electronics North America" H 4250 6300 50  0001 C CNN "MF"
+F 5 "GRM033R61A104KE15D" H 4150 6400 50  0001 C CNN "PN"
+F 6 "Samsung Electro-Mechanics" H 4150 6200 50  0001 C CNN "MF2"
+F 7 "CL03A104KP3NNNC" H 3950 6100 50  0001 C CNN "PN2"
+F 8 "10V" H 3465 7046 50  0000 L CNN "Voltage"
+F 9 "10%" H 3650 6700 50  0001 C CNN "Tolerance"
+F 10 "0.1uF" H 3465 6955 50  0000 L CNN "Cap_value"
+F 11 "0201" H 3465 6864 50  0000 L CNN "Size"
+	1    3350 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SLJ_Capacitor_0201:C_0201_0.47UF_6.3V_X5R C28
+U 1 1 5DC1BD8D
+P 2850 6950
+F 0 "C28" H 2965 7137 50  0000 L CNN
+F 1 "C_0201_0.47UF_6.3V_X5R" H 3250 6500 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0201" H 2888 6850 50  0001 C CNN
+F 3 "~" H 2850 7000 50  0001 C CNN
+F 4 "Murata Electronics North America" H 3750 6300 50  0001 C CNN "MF"
+F 5 "GRM033R60J474KE90D" H 3650 6400 50  0001 C CNN "PN"
+F 6 "Samsung Electro-Mechanics" H 3650 6200 50  0001 C CNN "MF2"
+F 7 "CL03A474KQ3NNNH" H 3450 6100 50  0001 C CNN "PN2"
+F 8 "6.3V" H 2965 7046 50  0000 L CNN "Voltage"
+F 9 "10%" H 3150 6700 50  0001 C CNN "Tolerance"
+F 10 "0.47uF" H 2965 6955 50  0000 L CNN "Cap_value"
+F 11 "0201" H 2965 6864 50  0000 L CNN "Size"
+	1    2850 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6750 2850 6600
+Wire Wire Line
+	2850 6600 3350 6600
+Connection ~ 3800 6600
+Wire Wire Line
+	3350 6750 3350 6600
+Connection ~ 3350 6600
+Wire Wire Line
+	3350 6600 3800 6600
+Wire Wire Line
+	3950 6750 3950 6600
+Connection ~ 3950 6600
+Wire Wire Line
+	3950 6600 3800 6600
+Wire Wire Line
+	4500 6750 4500 6600
+Connection ~ 4500 6600
+Wire Wire Line
+	4500 6600 3950 6600
+Wire Wire Line
+	2850 7050 2850 7350
+Wire Wire Line
+	2850 7350 3350 7350
+Wire Wire Line
+	3350 7350 3350 7050
+Wire Wire Line
+	3350 7350 3950 7350
+Wire Wire Line
+	3950 7350 3950 7050
+Connection ~ 3350 7350
+Wire Wire Line
+	4500 7050 4500 7350
+Wire Wire Line
+	4500 7350 4300 7350
+Connection ~ 3950 7350
+$Comp
+L power:GND #PWR0123
+U 1 1 5DC32573
+P 4300 7500
+F 0 "#PWR0123" H 4300 7250 50  0001 C CNN
+F 1 "GND" H 4305 7327 50  0000 C CNN
+F 2 "" H 4300 7500 50  0001 C CNN
+F 3 "" H 4300 7500 50  0001 C CNN
+	1    4300 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 7500 4300 7350
+Connection ~ 4300 7350
+Wire Wire Line
+	4300 7350 3950 7350
+$Comp
+L SLJ_Capacitor_0201:C_0201_0.1UF_10V_X5R C32
+U 1 1 5DC360B4
+P 13000 5100
+F 0 "C32" H 13115 5287 50  0000 L CNN
+F 1 "C_0201_0.1UF_10V_X5R" H 13400 4650 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0201" H 13038 5000 50  0001 C CNN
+F 3 "~" H 13000 5150 50  0001 C CNN
+F 4 "Murata Electronics North America" H 13900 4450 50  0001 C CNN "MF"
+F 5 "GRM033R61A104KE15D" H 13800 4550 50  0001 C CNN "PN"
+F 6 "Samsung Electro-Mechanics" H 13800 4350 50  0001 C CNN "MF2"
+F 7 "CL03A104KP3NNNC" H 13600 4250 50  0001 C CNN "PN2"
+F 8 "10V" H 13115 5196 50  0000 L CNN "Voltage"
+F 9 "10%" H 13300 4850 50  0001 C CNN "Tolerance"
+F 10 "0.1uF" H 13115 5105 50  0000 L CNN "Cap_value"
+F 11 "0201" H 13115 5014 50  0000 L CNN "Size"
+	1    13000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 4750 13000 4750
+Wire Wire Line
+	13000 4750 13000 4900
+Connection ~ 10800 4750
+Wire Wire Line
+	10800 4750 10800 4400
+Wire Wire Line
+	13000 5200 13000 5450
+Wire Wire Line
+	13000 5450 10800 5450
+Connection ~ 10800 5450
+Wire Wire Line
+	10800 5450 10800 5600
+Wire Wire Line
+	4700 5500 4000 5500
+Text HLabel 4000 5500 0    50   Input ~ 0
+RAM.CAS_L
+Wire Bus Line
+	8400 4600 8400 5200
+Wire Bus Line
+	3900 3000 3900 5100
+Wire Bus Line
+	6400 3000 6400 5200
+$EndSCHEMATC
