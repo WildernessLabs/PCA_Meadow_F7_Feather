@@ -306,41 +306,6 @@ Wire Wire Line
 	12250 6850 12850 6850
 Wire Wire Line
 	12250 6950 12850 6950
-$Comp
-L SLJ_Mechanical:EmbedMeadow J2
-U 1 1 5E2F554A
-P 4300 7050
-F 0 "J2" H 3600 8850 50  0000 C CNN
-F 1 "EmbedMeadow" H 3800 8750 50  0000 C CNN
-F 2 "SLJ_Mechanical:MeadowEmbeded_OnModule" H 3500 6850 50  0001 C CNN
-F 3 "" H 3400 6850 50  0001 C CNN
-	1    4300 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 5550 2300 5550
-Wire Wire Line
-	2300 5550 2300 5650
-Wire Wire Line
-	2700 5650 2300 5650
-Connection ~ 2300 5650
-Wire Wire Line
-	2300 5650 2300 5750
-Wire Wire Line
-	2700 5750 2300 5750
-Connection ~ 2300 5750
-Wire Wire Line
-	2300 5750 2300 5850
-Wire Wire Line
-	2700 5850 2300 5850
-Connection ~ 2300 5850
-Wire Wire Line
-	2300 5850 2300 5950
-Wire Wire Line
-	2700 5950 2300 5950
-Connection ~ 2300 5950
-Wire Wire Line
-	2300 5950 2300 6050
 Text Label 9100 6600 0    50   ~ 0
 PC9_TIM8CH4
 Text Label 9150 3650 0    50   ~ 0
@@ -404,9 +369,9 @@ PA1
 Text Label 12350 4550 0    50   ~ 0
 PA2
 Text Label 12350 4650 0    50   ~ 0
-PA9
+PA9_VBUS
 Text Label 12350 4750 0    50   ~ 0
-PA10
+PA10_USB_ID
 Text Label 12350 4850 0    50   ~ 0
 USB_D_N
 Text Label 12350 4950 0    50   ~ 0
@@ -449,345 +414,6 @@ Text Label 12350 6850 0    50   ~ 0
 PD6
 Text Label 12350 6950 0    50   ~ 0
 PD7
-Wire Wire Line
-	2700 8050 1650 8050
-Wire Wire Line
-	2700 7950 1650 7950
-Wire Wire Line
-	2700 7850 1650 7850
-Wire Wire Line
-	2700 7750 1650 7750
-Wire Wire Line
-	2700 7650 1650 7650
-Text Label 1800 7950 0    50   ~ 0
-PC9_TIM8CH4
-Text Label 1800 8050 0    50   ~ 0
-PA10
-Text Label 1800 7750 0    50   ~ 0
-PC8_TIM8CH1
-Text Label 1800 7650 0    50   ~ 0
-PH12_OTG_FS_PWRON
-Text Label 1800 7150 0    50   ~ 0
-PG3
-Wire Wire Line
-	2700 7550 1650 7550
-Wire Wire Line
-	1650 7450 2700 7450
-Wire Wire Line
-	2700 7350 2500 7350
-Wire Wire Line
-	2500 7350 2500 6350
-Wire Wire Line
-	2700 7250 2300 7250
-Connection ~ 2300 7250
-Wire Wire Line
-	2300 7250 2300 8600
-Wire Wire Line
-	2700 7150 1650 7150
-Wire Wire Line
-	2700 7050 1650 7050
-Wire Wire Line
-	2700 6950 1650 6950
-Wire Wire Line
-	2700 6250 2300 6250
-Connection ~ 2300 6250
-Wire Wire Line
-	2300 6250 2300 7250
-Wire Wire Line
-	2700 6350 2500 6350
-Connection ~ 2500 6350
-Wire Wire Line
-	2500 6350 2500 5100
-Wire Wire Line
-	2700 6850 1650 6850
-Wire Wire Line
-	2700 6750 1650 6750
-Wire Wire Line
-	2700 6650 1650 6650
-Wire Wire Line
-	2700 6550 1650 6550
-Wire Wire Line
-	2700 6150 1650 6150
-Wire Wire Line
-	2700 6050 2300 6050
-Wire Wire Line
-	2700 6450 1650 6450
-Text Label 1800 7850 0    50   ~ 0
-PA9
-Text Label 1800 7550 0    50   ~ 0
-PC7_TIM3CH2
-Text Label 1800 7450 0    50   ~ 0
-PC6_TIM3CH1
-Text Label 1800 7050 0    50   ~ 0
-PH10_TIM5CH1
-Text Label 1800 6950 0    50   ~ 0
-ESP32_MTDO
-Text Label 1800 6850 0    50   ~ 0
-ESP32_MTCK
-Text Label 1800 6750 0    50   ~ 0
-ESP32_MTDI
-Text Label 1800 6650 0    50   ~ 0
-ESP32_MTMS
-Text Label 1800 6550 0    50   ~ 0
-PB15_USART1_RX
-Text Label 1800 6450 0    50   ~ 0
-PB14_USART1_TX
-Connection ~ 2300 6050
-Wire Wire Line
-	2300 6050 2300 6250
-Text Label 1800 6150 0    50   ~ 0
-PB11_I2C2_SDA
-$Comp
-L SLJ_Pwr_symbols:+3V3 #PWR?
-U 1 1 5E40278D
-P 2500 4850
-AR Path="/5D09BE01/5E40278D" Ref="#PWR?"  Part="1" 
-AR Path="/5E40278D" Ref="#PWR0125"  Part="1" 
-F 0 "#PWR0125" H 2831 4774 50  0001 C CNN
-F 1 "+3V3" H 2515 5053 50  0000 C CNN
-F 2 "" H 2500 4850 50  0001 C CNN
-F 3 "" H 2500 4850 50  0001 C CNN
-	1    2500 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0126
-U 1 1 5E4045CA
-P 2300 9450
-F 0 "#PWR0126" H 2300 9200 50  0001 C CNN
-F 1 "GND" H 2305 9277 50  0000 C CNN
-F 2 "" H 2300 9450 50  0001 C CNN
-F 3 "" H 2300 9450 50  0001 C CNN
-	1    2300 9450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 8350 3000 9450
-Wire Wire Line
-	3500 8350 3500 8600
-Wire Wire Line
-	3500 8600 2300 8600
-Connection ~ 2300 8600
-Wire Wire Line
-	2300 8600 2300 9450
-Wire Wire Line
-	3800 8350 3800 8600
-Wire Wire Line
-	3800 8600 3500 8600
-Connection ~ 3500 8600
-Wire Wire Line
-	4100 8350 4100 8600
-Wire Wire Line
-	4100 8600 3800 8600
-Connection ~ 3800 8600
-Wire Wire Line
-	5300 8350 5300 8600
-Wire Wire Line
-	5300 8600 4100 8600
-Connection ~ 4100 8600
-Wire Wire Line
-	5400 8350 5400 8500
-Wire Wire Line
-	5400 8500 5950 8500
-Wire Wire Line
-	5950 8500 5950 6550
-Wire Wire Line
-	5950 5100 2500 5100
-Connection ~ 2500 5100
-Wire Wire Line
-	2500 5100 2500 4850
-Wire Wire Line
-	3100 8350 3100 9450
-Wire Wire Line
-	3200 8350 3200 9450
-Wire Wire Line
-	3300 8350 3300 9450
-Wire Wire Line
-	3600 8350 3600 9450
-Wire Wire Line
-	3700 8350 3700 9450
-Wire Wire Line
-	3900 8350 3900 9450
-Wire Wire Line
-	4000 8350 4000 9450
-Wire Wire Line
-	4200 8350 4200 9450
-Wire Wire Line
-	4300 8350 4300 9450
-Wire Wire Line
-	4400 8350 4400 9450
-Wire Wire Line
-	4500 8350 4500 9450
-Wire Wire Line
-	4600 8350 4600 9450
-Wire Wire Line
-	4700 8350 4700 9450
-Wire Wire Line
-	4800 8350 4800 9450
-Wire Wire Line
-	4900 8350 4900 9450
-Wire Wire Line
-	5000 8350 5000 9450
-Wire Wire Line
-	5100 8350 5100 9450
-Wire Wire Line
-	5200 8350 5200 9450
-Wire Wire Line
-	5500 8350 5500 9450
-Wire Wire Line
-	3400 8350 3400 9450
-Text Label 5500 9250 1    50   ~ 0
-PB6_I2C1_SCL
-Text Label 5200 9250 1    50   ~ 0
-PB5_SPI3_MOSI
-Text Label 3000 9250 1    50   ~ 0
-PH13_UART4_TX
-Text Label 3100 9250 1    50   ~ 0
-PC10_SPI3_SCK
-Text Label 3200 9250 1    50   ~ 0
-PA13_SWDIO
-Text Label 3300 9250 1    50   ~ 0
-PA14_SWCLK
-Text Label 3400 9250 1    50   ~ 0
-PC11_SPI3_MISO
-Text Label 3600 9250 1    50   ~ 0
-USB_D_N
-Text Label 3700 9250 1    50   ~ 0
-USB_D_P
-Text Label 3900 9250 1    50   ~ 0
-PA15
-Text Label 4000 9250 1    50   ~ 0
-PD5
-Text Label 4200 9250 1    50   ~ 0
-PD6
-Text Label 4300 9250 1    50   ~ 0
-PD7
-Text Label 4400 9250 1    50   ~ 0
-PG9
-Text Label 4500 9250 1    50   ~ 0
-PG10
-Text Label 4600 9250 1    50   ~ 0
-PB3
-Text Label 4700 9250 1    50   ~ 0
-PB4
-Text Label 4900 9250 1    50   ~ 0
-PG11
-Text Label 5000 9250 1    50   ~ 0
-PG13
-Text Label 5100 9250 1    50   ~ 0
-PG14
-Text Label 4800 9250 1    50   ~ 0
-BOOT0
-Wire Wire Line
-	5800 5550 5850 5550
-Wire Wire Line
-	6000 5550 6000 6450
-Wire Wire Line
-	6000 8600 5300 8600
-Connection ~ 5300 8600
-Wire Wire Line
-	5800 7150 6000 7150
-Connection ~ 6000 7150
-Wire Wire Line
-	6000 7150 6000 8600
-Wire Wire Line
-	5800 6450 6000 6450
-Connection ~ 6000 6450
-Wire Wire Line
-	6000 6450 6000 7150
-Wire Wire Line
-	5800 6550 5950 6550
-Connection ~ 5950 6550
-Wire Wire Line
-	5950 6550 5950 5100
-Wire Wire Line
-	5800 5650 6900 5650
-Wire Wire Line
-	5800 5750 6900 5750
-Wire Wire Line
-	5800 5850 6900 5850
-Wire Wire Line
-	5800 5950 6900 5950
-Wire Wire Line
-	5800 6050 6900 6050
-Wire Wire Line
-	5800 6150 6900 6150
-Wire Wire Line
-	5800 6250 6900 6250
-Wire Wire Line
-	5800 6350 6900 6350
-Wire Wire Line
-	5800 6650 6900 6650
-Wire Wire Line
-	5800 6750 6900 6750
-Wire Wire Line
-	5800 6850 6900 6850
-Wire Wire Line
-	5800 6950 6900 6950
-Wire Wire Line
-	5800 7250 6900 7250
-Wire Wire Line
-	5800 7350 6900 7350
-Wire Wire Line
-	5800 7450 6900 7450
-Wire Wire Line
-	5800 7550 6900 7550
-Wire Wire Line
-	5800 7650 6900 7650
-Wire Wire Line
-	5800 7750 6900 7750
-Wire Wire Line
-	5800 7850 6900 7850
-Wire Wire Line
-	5800 7950 6900 7950
-Wire Wire Line
-	5800 8050 6900 8050
-Wire Wire Line
-	5800 7050 6900 7050
-Text Label 6650 5650 2    50   ~ 0
-PB0_TIM3CH3
-Text Label 6300 5750 2    50   ~ 0
-PC5
-Text Label 6150 5850 0    50   ~ 0
-PB1_TIM3CH4
-Text Label 6150 5950 0    50   ~ 0
-PA5_DAC_OUT2
-Text Label 6150 6350 0    50   ~ 0
-PC4
-Text Label 6150 6150 0    50   ~ 0
-PA7_ADC1_IN7
-Text Label 6150 6250 0    50   ~ 0
-PA2
-Text Label 6150 6850 0    50   ~ 0
-PC2_OTG_FS_OC
-Text Label 6150 6050 0    50   ~ 0
-PA4_DAC_OUT1
-Text Label 6150 6650 0    50   ~ 0
-PA3_ADC1_IN3
-Text Label 6150 6750 0    50   ~ 0
-PA0
-Text Label 6150 6950 0    50   ~ 0
-VREF
-Text Label 6150 7050 0    50   ~ 0
-PA1
-Text Label 6150 7250 0    50   ~ 0
-PC0_ADC1_IN10
-Text Label 6150 7350 0    50   ~ 0
-PC1_ADC1_IN11
-Text Label 6150 7450 0    50   ~ 0
-RESET_L
-Text Label 6150 7550 0    50   ~ 0
-PI9_UART4_RX
-Text Label 6150 7650 0    50   ~ 0
-VBAT
-Text Label 6150 7750 0    50   ~ 0
-PE3
-Text Label 6150 7850 0    50   ~ 0
-PB9_CAN1_TX
-Text Label 6150 8050 0    50   ~ 0
-PB8_CAN1_RX
-Text Label 6150 7950 0    50   ~ 0
-PB7_I2C1_SDA
 $Sheet
 S 5700 2400 1500 2000
 U 5D06E29D
@@ -827,19 +453,341 @@ Wire Wire Line
 	9750 6850 9000 6850
 Text Label 9400 6850 2    50   ~ 0
 BOOT0
-Wire Wire Line
-	4300 5200 4300 5250
-Wire Wire Line
-	4300 5200 5850 5200
-Wire Wire Line
-	5850 5200 5850 5550
-Connection ~ 5850 5550
-Wire Wire Line
-	5850 5550 6000 5550
 $Sheet
-S 900  700  1500 1000
+S 10200 700  1500 1000
 U 5FF6CAF7
 F0 "USB_POWER" 50
 F1 "USB_POWER.sch" 50
+F2 "VBUS_MCU" O R 11700 800 50 
+F3 "EN_3V3_L" I L 10200 800 50 
+F4 "USB_P" B R 11700 900 50 
+F5 "USB_N" B R 11700 1000 50 
+F6 "USB_OTG_ID" B R 11700 1100 50 
+F7 "USB_OC_L" O R 11700 1200 50 
+F8 "USB_PWR_EN" I R 11700 1300 50 
+F9 "EN_3V3" I L 10200 900 50 
+F10 "VBAT_MEAS" O R 11700 1400 50 
 $EndSheet
+$Comp
+L SLJ_Connector:MEADOWF7MICRO_WITH_OUTLINE J?
+U 1 1 60068A20
+P 3400 6000
+F 0 "J?" H 4200 6647 50  0000 C CNN
+F 1 "MEADOWF7MICRO_WITH_OUTLINE" H 4200 6556 50  0000 C CNN
+F 2 "SLJ_Mechanical:MeadowF7Micro_w_outline" H 4000 4000 50  0001 C CNN
+F 3 "https://store.wildernesslabs.co/collections/frontpage/products/meadow-f7" H 4000 4000 50  0001 C CNN
+F 4 "Wilderness Labs" H 4200 6465 50  0000 C CNN "MF"
+F 5 "Meadow F7 Micro " H 4200 6374 50  0000 C CNN "PN"
+	1    3400 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6200 5100 6200
+Wire Wire Line
+	5100 6200 5100 5900
+$Comp
+L SLJ_Pwr_symbols:+VBAT #PWR?
+U 1 1 600A81C6
+P 5100 5900
+F 0 "#PWR?" H 5431 5824 50  0001 C CNN
+F 1 "+VBAT" H 5115 6103 50  0000 C CNN
+F 2 "" H 5100 5900 50  0001 C CNN
+F 3 "" H 5100 5900 50  0001 C CNN
+	1    5100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6300 5800 6300
+Wire Wire Line
+	10200 900  9400 900 
+Text Label 9600 900  0    50   ~ 0
+EN_3V3
+Text Label 5500 6300 0    50   ~ 0
+EN_3V3
+Wire Wire Line
+	5000 6400 5400 6400
+Wire Wire Line
+	5400 6400 5400 5900
+$Comp
+L SLJ_Pwr_symbols:+5V #PWR?
+U 1 1 600BC671
+P 5400 5900
+F 0 "#PWR?" H 5731 5824 50  0001 C CNN
+F 1 "+5V" H 5415 6103 50  0000 C CNN
+F 2 "" H 5400 5900 50  0001 C CNN
+F 3 "" H 5400 5900 50  0001 C CNN
+	1    5400 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5900 3300 5900
+Wire Wire Line
+	3300 5900 3300 5500
+$Comp
+L SLJ_Pwr_symbols:+3V3 #PWR?
+U 1 1 600C0CA5
+P 3300 5400
+F 0 "#PWR?" H 3631 5324 50  0001 C CNN
+F 1 "+3V3" H 3315 5603 50  0000 C CNN
+F 2 "" H 3300 5400 50  0001 C CNN
+F 3 "" H 3300 5400 50  0001 C CNN
+	1    3300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6000 2700 6000
+Text Label 2900 6000 0    50   ~ 0
+VREF
+$Comp
+L SLJ_Resistor_0402:R_0_1%_0402 R?
+U 1 1 600C53D1
+P 2700 5800
+F 0 "R?" H 2768 5896 50  0000 L CNN
+F 1 "R_0_1%_0402" H 2685 5207 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2674 5367 50  0001 C CNN
+F 3 "~" H 2700 5850 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 2663 5139 50  0001 C CNN "MF"
+F 5 "RMCF0402ZT0R00" H 2658 5276 50  0001 C CNN "PN"
+F 6 "0" H 2768 5805 50  0000 L CNN "Res_value"
+F 7 "Vishay Dale" H 2700 5800 50  0001 C CNN "MF2"
+F 8 "CRCW04020000Z0ED" H 2700 5800 50  0001 C CNN "PN2"
+	1    2700 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5900 2700 6000
+Wire Wire Line
+	2700 5600 2700 5500
+Wire Wire Line
+	2700 5500 3300 5500
+Connection ~ 3300 5500
+Wire Wire Line
+	3300 5500 3300 5400
+Text Notes 1300 5800 0    50   ~ 0
+Place near MCU\nRemove is using external VREF
+Wire Wire Line
+	3400 6100 3100 6100
+Wire Wire Line
+	3100 6100 3100 7600
+$Comp
+L power:GND #PWR?
+U 1 1 600D2E81
+P 3100 7600
+F 0 "#PWR?" H 3100 7350 50  0001 C CNN
+F 1 "GND" H 3105 7427 50  0000 C CNN
+F 2 "" H 3100 7600 50  0001 C CNN
+F 3 "" H 3100 7600 50  0001 C CNN
+	1    3100 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 7500 2400 7500
+Wire Wire Line
+	3400 7400 2400 7400
+Wire Wire Line
+	3400 7300 2400 7300
+Wire Wire Line
+	3400 7200 2400 7200
+Wire Wire Line
+	3400 6200 2400 6200
+Wire Wire Line
+	3400 6300 2400 6300
+Wire Wire Line
+	3400 6400 2400 6400
+Wire Wire Line
+	3400 6500 2400 6500
+Wire Wire Line
+	3400 6600 2400 6600
+Wire Wire Line
+	3400 6700 2400 6700
+Wire Wire Line
+	3400 6800 2400 6800
+Wire Wire Line
+	3400 6900 2400 6900
+Wire Wire Line
+	3400 7000 2400 7000
+Wire Wire Line
+	3400 7100 2400 7100
+Wire Wire Line
+	5000 6500 5900 6500
+Wire Wire Line
+	5000 6600 5900 6600
+Wire Wire Line
+	5000 6700 5900 6700
+Wire Wire Line
+	5000 6800 5900 6800
+Wire Wire Line
+	5000 6900 5900 6900
+Wire Wire Line
+	5000 7000 5900 7000
+Wire Wire Line
+	5000 7100 5900 7100
+Wire Wire Line
+	5000 7200 5900 7200
+Wire Wire Line
+	5000 7300 5900 7300
+Wire Wire Line
+	5000 7400 5900 7400
+Wire Wire Line
+	5000 7500 5900 7500
+Text Label 5200 7500 0    50   ~ 0
+PC7_TIM3CH2
+Text Label 5200 7400 0    50   ~ 0
+PB0_TIM3CH3
+Text Label 5200 7300 0    50   ~ 0
+PB7_I2C1_SDA
+Text Label 5200 7200 0    50   ~ 0
+PB6_I2C1_SCL
+Text Label 5200 7100 0    50   ~ 0
+PB1_TIM3CH4
+Text Label 5200 7000 0    50   ~ 0
+PH10_TIM5CH1
+Text Label 5200 6900 0    50   ~ 0
+PC9_TIM8CH4
+Text Label 5200 6800 0    50   ~ 0
+PB14_USART1_TX
+Text Label 5200 6700 0    50   ~ 0
+PB15_USART1_RX
+Text Label 2500 7400 0    50   ~ 0
+PB8_CAN1_RX
+Text Label 2500 7500 0    50   ~ 0
+PB9_CAN1_TX
+Text Label 2500 7300 0    50   ~ 0
+PC6_TIM3CH1
+Text Label 2400 6200 0    50   ~ 0
+PA4_DAC_OUT1
+Text Label 2400 6300 0    50   ~ 0
+PA5_DAC_OUT2
+Text Label 2400 6400 0    50   ~ 0
+PA3_ADC1_IN3
+Text Label 2400 6500 0    50   ~ 0
+PA7_ADC1_IN7
+Text Label 2400 6600 0    50   ~ 0
+PC0_ADC1_IN10
+Text Label 2400 6700 0    50   ~ 0
+PC1_ADC1_IN11
+Text Label 2400 6800 0    50   ~ 0
+PC10_SPI3_SCK
+Text Label 2400 6900 0    50   ~ 0
+PB5_SPI3_MOSI
+Text Label 2400 7000 0    50   ~ 0
+PB5_SPI3_MOSI
+Text Label 2900 5800 0    50   ~ 0
+RESET_L
+Wire Wire Line
+	3400 5800 2900 5800
+Text Label 11800 1000 0    50   ~ 0
+USB_D_N
+Wire Wire Line
+	11700 1000 12200 1000
+Wire Wire Line
+	11700 900  12200 900 
+Text Label 2400 7100 0    50   ~ 0
+PI9_UART4_RX
+Text Label 2400 7200 0    50   ~ 0
+PH13_UART4_TX
+Text Label 5200 6500 0    50   ~ 0
+PE3
+Text Label 5200 6600 0    50   ~ 0
+PG3
+$Comp
+L SLJ_Mechanical:SW_434153017835 SW?
+U 1 1 601ADAD2
+P 15500 8000
+F 0 "SW?" H 15500 8285 50  0000 C CNN
+F 1 "SW_434153017835" H 15500 8194 50  0000 C CNN
+F 2 "SLJ_SMT:WURTH_434153017835" H 15500 8200 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/434153017835.pdf" H 15500 8200 50  0001 C CNN
+F 4 "Würth Elektronik" H 15400 7800 50  0001 C CNN "MF"
+F 5 "434153017835" H 15400 7700 50  0001 C CNN "PN"
+	1    15500 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SLJ_Mechanical:SW_434153017835 SW?
+U 1 1 601AF38D
+P 15300 9000
+F 0 "SW?" H 15300 9285 50  0000 C CNN
+F 1 "SW_434153017835" H 15300 9194 50  0000 C CNN
+F 2 "SLJ_SMT:WURTH_434153017835" H 15300 9200 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/434153017835.pdf" H 15300 9200 50  0001 C CNN
+F 4 "Würth Elektronik" H 15200 8800 50  0001 C CNN "MF"
+F 5 "434153017835" H 15200 8700 50  0001 C CNN "PN"
+	1    15300 9000
+	1    0    0    -1  
+$EndComp
+Text Label 14700 8000 0    50   ~ 0
+RESET_L
+Wire Wire Line
+	14700 8000 15300 8000
+Wire Wire Line
+	15700 8000 16000 8000
+Wire Wire Line
+	16000 8000 16000 8400
+$Comp
+L power:GND #PWR?
+U 1 1 601BFBDB
+P 16000 8400
+F 0 "#PWR?" H 16000 8150 50  0001 C CNN
+F 1 "GND" H 16005 8227 50  0000 C CNN
+F 2 "" H 16000 8400 50  0001 C CNN
+F 3 "" H 16000 8400 50  0001 C CNN
+	1    16000 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15100 9000 14800 9000
+Wire Wire Line
+	14800 9000 14800 8600
+$Comp
+L SLJ_Pwr_symbols:+3V3 #PWR?
+U 1 1 601C89C8
+P 14800 8600
+F 0 "#PWR?" H 15131 8524 50  0001 C CNN
+F 1 "+3V3" H 14815 8803 50  0000 C CNN
+F 2 "" H 14800 8600 50  0001 C CNN
+F 3 "" H 14800 8600 50  0001 C CNN
+	1    14800 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 9000 15500 9000
+Connection ~ 15500 9000
+Wire Wire Line
+	15500 9000 16100 9000
+Text Label 15900 9000 2    50   ~ 0
+BOOT0
+Text Notes 15300 7500 0    50   ~ 0
+RESET BUTTON
+Text Notes 15100 8500 0    50   ~ 0
+DFU BOOT BUTTON
+Wire Notes Line
+	14500 7300 14500 9200
+Wire Notes Line
+	14500 9200 16300 9200
+Wire Notes Line
+	16300 9200 16300 7300
+Wire Notes Line
+	16300 7300 14500 7300
+Text Label 11800 1300 0    50   ~ 0
+PH12_OTG_FS_PWRON
+Wire Wire Line
+	11700 800  12600 800 
+Wire Wire Line
+	11700 1100 12600 1100
+Wire Wire Line
+	11700 1200 12600 1200
+Wire Wire Line
+	11700 1400 12600 1400
+Wire Wire Line
+	11700 1300 12600 1300
+Text Label 11800 1200 0    50   ~ 0
+PC2_OTG_FS_OC
+Text Label 11800 1100 0    50   ~ 0
+PA10_USB_ID
+Text Label 11800 800  0    50   ~ 0
+PA9_VBUS
+Text Label 11800 900  0    50   ~ 0
+USB_D_P
+NoConn ~ 10200 800 
 $EndSCHEMATC

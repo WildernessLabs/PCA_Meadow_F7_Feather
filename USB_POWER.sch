@@ -816,7 +816,7 @@ Wire Wire Line
 	2500 4600 2500 4300
 Connection ~ 2500 4300
 Wire Wire Line
-	2500 4300 3000 4300
+	2500 4300 2600 4300
 Wire Wire Line
 	2500 4900 2500 5300
 Wire Wire Line
@@ -839,4 +839,20 @@ Wire Wire Line
 	2500 5300 2500 5400
 Text HLabel 2900 5300 2    49   Output ~ 0
 VBAT_MEAS
+$Comp
+L SLJ_Pwr_symbols_Source:+VBAT #PWR?
+U 1 1 600A0377
+P 2600 4000
+F 0 "#PWR?" H 2931 3924 50  0001 C CNN
+F 1 "+VBAT" H 2612 4173 50  0000 C CNN
+F 2 "" H 2600 4000 50  0001 C CNN
+F 3 "" H 2600 4000 50  0001 C CNN
+	1    2600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4000 2600 4300
+Connection ~ 2600 4300
+Wire Wire Line
+	2600 4300 3000 4300
 $EndSCHEMATC
