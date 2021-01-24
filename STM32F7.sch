@@ -1679,6 +1679,10 @@ Wire Wire Line
 	10600 4100 11300 4100
 Wire Wire Line
 	10600 4200 11300 4200
+Text HLabel 11300 4200 2    50   BiDi ~ 0
+PB12
+Text Label 10700 4200 0    50   ~ 0
+PB12_I2S_WS
 Wire Wire Line
 	10600 7500 12400 7500
 Wire Bus Line
@@ -1687,8 +1691,8 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
-Text HLabel 11300 4200 2    50   BiDi ~ 0
-PB12
-Text Label 10700 4200 0    50   ~ 0
-PB12_I2S_WS
+Text Label 4900 1900 0    50   ~ 0
+VCAP1
+Text Label 4900 2000 0    50   ~ 0
+VCAP2
 $EndSCHEMATC
