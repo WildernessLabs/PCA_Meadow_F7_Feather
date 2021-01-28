@@ -442,21 +442,6 @@ F9 "EN_3V3" I L 10200 900 50
 F10 "VBAT_MEAS" O R 11700 1400 50 
 $EndSheet
 Wire Wire Line
-	5000 6200 5100 6200
-Wire Wire Line
-	5100 6200 5100 5900
-$Comp
-L SLJ_Pwr_symbols:+VBAT #PWR03
-U 1 1 600A81C6
-P 5100 5900
-F 0 "#PWR03" H 5431 5824 50  0001 C CNN
-F 1 "+VBAT" H 5115 6103 50  0000 C CNN
-F 2 "" H 5100 5900 50  0001 C CNN
-F 3 "" H 5100 5900 50  0001 C CNN
-	1    5100 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	5000 6300 5800 6300
 Wire Wire Line
 	10200 900  9400 900 
@@ -1151,6 +1136,21 @@ F 3 "https://store.wildernesslabs.co/collections/frontpage/products/meadow-f7" H
 F 4 "Wilderness Labs" H 4200 6465 50  0000 C CNN "MF"
 F 5 "Meadow F7 Micro " H 4200 6374 50  0000 C CNN "PN"
 	1    3400 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5800 5100 6200
+Wire Wire Line
+	5100 6200 5000 6200
+$Comp
+L SLJ_Pwr_symbols_Source:+VBAT #PWR?
+U 1 1 60140402
+P 5100 5800
+F 0 "#PWR?" H 5431 5724 50  0001 C CNN
+F 1 "+VBAT" H 5112 5973 50  0000 C CNN
+F 2 "" H 5100 5800 50  0001 C CNN
+F 3 "" H 5100 5800 50  0001 C CNN
+	1    5100 5800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
