@@ -1,4 +1,4 @@
-update=1/27/2021 7:12:19 PM
+update=1/31/2021 2:19:07 PM
 version=1
 last_client=kicad
 [general]
@@ -281,6 +281,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
+Name=RF
+Clearance=0.1524
+TrackWidth=0.09652
+ViaDiameter=0.4064
+ViaDrill=0.2032
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.127
+dPairGap=0.127
+dPairViaGap=0.25
+[pcbnew/Netclasses/4]
 Name=SDMMC
 Clearance=0.1143
 TrackWidth=0.09652
@@ -291,7 +302,7 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/4]
+[pcbnew/Netclasses/5]
 Name=USB
 Clearance=0.1524
 TrackWidth=0.127
