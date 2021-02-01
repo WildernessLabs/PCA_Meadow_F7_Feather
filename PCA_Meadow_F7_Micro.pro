@@ -1,4 +1,4 @@
-update=1/31/2021 2:19:07 PM
+update=1/31/2021 5:10:40 PM
 version=1
 last_client=kicad
 [general]
@@ -24,14 +24,14 @@ LabSize=50
 ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=C:/wildernesslabs/Circuit_Part_Libraries/Libraries_Kicad/WildernessLab_pagelayout.kicad_wks
+PageLayoutDescrFile=C:/Wildernesslabs/Circuit_Part_Libraries/Libraries_Kicad/WildernessLab_pagelayout.kicad_wks
 LastNetListRead=F7MicroEmbed_RevA.net
 CopperLayerCount=6
 BoardThickness=1.6002
 AllowMicroVias=0
 AllowBlindVias=0
-RequireCourtyardDefinitions=1
-ProhibitOverlappingCourtyards=1
+RequireCourtyardDefinitions=0
+ProhibitOverlappingCourtyards=0
 MinTrackWidth=0.09651999999999999
 MinViaDiameter=0.4064
 MinViaDrill=0.2032
@@ -71,9 +71,9 @@ CopperTextUpright=1
 EdgeCutLineWidth=0.05
 CourtyardLineWidth=0.05
 OthersLineWidth=0.15
-OthersTextSizeV=1
-OthersTextSizeH=1
-OthersTextSizeThickness=0.15
+OthersTextSizeV=0.5
+OthersTextSizeH=0.5
+OthersTextSizeThickness=0.05
 OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0.0508
