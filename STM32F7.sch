@@ -1279,20 +1279,15 @@ NoConn ~ 5700 5600
 NoConn ~ 5700 6200
 NoConn ~ 5700 6100
 Wire Wire Line
-	5700 5700 5100 5700
-Wire Wire Line
 	5700 5900 5100 5900
 Wire Wire Line
-	5700 6000 5100 6000
-Text HLabel 5100 5700 0    50   BiDi ~ 0
-PH10_TIM5CH1
+	5700 6000 4200 6000
 Text HLabel 5100 5900 0    50   Output ~ 0
 OTG_FS_PWRON
-Text HLabel 5100 6000 0    50   Output ~ 0
+Text HLabel 4200 6000 0    50   Output ~ 0
 UART4_TX
 NoConn ~ 5700 7000
 NoConn ~ 5700 7100
-NoConn ~ 5700 7600
 Wire Wire Line
 	5700 6700 5100 6700
 Text HLabel 5100 6700 0    50   BiDi ~ 0
@@ -1305,36 +1300,6 @@ Wire Wire Line
 	5700 8800 5200 8800
 Text HLabel 5200 8800 0    50   BiDi ~ 0
 PF7
-Wire Wire Line
-	7800 1000 7800 800 
-Wire Wire Line
-	7900 1000 7900 800 
-Wire Wire Line
-	8000 1000 8000 800 
-Wire Wire Line
-	8100 1000 8100 800 
-Wire Wire Line
-	7600 1000 7600 800 
-Wire Wire Line
-	7700 1000 7700 800 
-Wire Wire Line
-	8400 1000 8400 800 
-Wire Wire Line
-	8500 1000 8500 800 
-Wire Wire Line
-	8600 1000 8600 800 
-Wire Wire Line
-	8700 1000 8700 800 
-Wire Wire Line
-	8800 1000 8800 800 
-Wire Wire Line
-	8200 1000 8200 800 
-Wire Wire Line
-	8300 1000 8300 800 
-Wire Wire Line
-	8900 1000 8900 800 
-Wire Wire Line
-	9000 800  9000 1000
 Wire Wire Line
 	10600 8800 11400 8800
 Wire Wire Line
@@ -1483,8 +1448,6 @@ NoConn ~ 10600 8500
 NoConn ~ 10600 8600
 NoConn ~ 10600 8700
 Wire Wire Line
-	7500 1000 7500 800 
-Wire Wire Line
 	7500 800  6850 800 
 Text HLabel 6850 800  0    50   UnSpc ~ 0
 VBAT
@@ -1561,17 +1524,6 @@ Text Label 5300 7700 0    50   ~ 0
 ETH_TXD0
 Text Label 5300 7800 0    50   ~ 0
 ETH_TXD1
-$Comp
-L MCU_ST_STM32F7:STM32F777IIKx U3
-U 1 1 5D09BECD
-P 8200 5400
-F 0 "U3" H 6000 9800 50  0000 C CNN
-F 1 "STM32F777IIKx" H 6200 9700 50  0000 C CNN
-F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
-	1    8200 5400
-	1    0    0    -1  
-$EndComp
 NoConn ~ 5700 5800
 Wire Wire Line
 	5700 7500 5100 7500
@@ -1687,6 +1639,52 @@ Text Label 4900 1900 0    50   ~ 0
 VCAP1
 Text Label 4900 2000 0    50   ~ 0
 VCAP2
+NoConn ~ 5700 5700
+Wire Wire Line
+	9000 800  9000 1000
+Wire Wire Line
+	8900 1000 8900 800 
+Wire Wire Line
+	8600 1000 8600 800 
+Wire Wire Line
+	8500 1000 8500 800 
+Wire Wire Line
+	8400 1000 8400 800 
+Wire Wire Line
+	8300 1000 8300 800 
+Wire Wire Line
+	8800 1000 8800 800 
+Wire Wire Line
+	8700 1000 8700 800 
+Wire Wire Line
+	8000 1000 8000 800 
+Wire Wire Line
+	7900 1000 7900 800 
+Wire Wire Line
+	7800 1000 7800 800 
+Wire Wire Line
+	7700 1000 7700 800 
+Wire Wire Line
+	7600 1000 7600 800 
+Wire Wire Line
+	8200 1000 8200 800 
+Wire Wire Line
+	8100 1000 8100 800 
+Wire Wire Line
+	7500 1000 7500 800 
+$Comp
+L MCU_ST_STM32F7:STM32F777IIKx U3
+U 1 1 5D09BECD
+P 8200 5400
+F 0 "U3" H 6000 9800 50  0000 C CNN
+F 1 "STM32F777IIKx" H 6200 9700 50  0000 C CNN
+F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
+	1    8200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 7600 5200 7600
 Wire Wire Line
 	10600 7500 12400 7500
 Wire Bus Line
@@ -1695,4 +1693,6 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
+Text HLabel 5200 7600 0    50   BiDi ~ 0
+PG12
 $EndSCHEMATC

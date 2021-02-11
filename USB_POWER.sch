@@ -788,8 +788,6 @@ F 3 "" H 2500 6100 50  0001 C CNN
 	1    2500 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 5300 3400 5300
 Connection ~ 2500 5300
 Wire Wire Line
 	2500 5300 2500 5400
@@ -857,11 +855,6 @@ F 11 "0201" H 3515 5614 50  0000 L CNN "Size"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 5500 3400 5300
-Connection ~ 3400 5300
-Wire Wire Line
-	3400 5300 4100 5300
-Wire Wire Line
 	2500 6000 3400 6000
 Wire Wire Line
 	3400 6000 3400 5800
@@ -900,4 +893,13 @@ $EndComp
 Wire Wire Line
 	3900 9100 3900 9200
 Connection ~ 3900 9200
+Text Label 2800 5300 0    50   ~ 0
+VBAT_MEAS
+Wire Wire Line
+	2500 5300 3400 5300
+Wire Wire Line
+	3400 5500 3400 5300
+Connection ~ 3400 5300
+Wire Wire Line
+	3400 5300 4100 5300
 $EndSCHEMATC
