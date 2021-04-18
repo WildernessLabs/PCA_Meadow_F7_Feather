@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 5
 Title "F7 Micro Meadow"
-Date "2021-01-19"
-Rev "V2.A"
+Date "2021-04-18"
+Rev "V2.B"
 Comp ""
 Comment1 "S.Johnson"
 Comment2 ""
@@ -280,6 +280,7 @@ F77 "PE3" B L 9800 3500 50
 F78 "PC12_UART5_TX" O L 9800 3300 50 
 F79 "PB12" B L 9800 5500 50 
 F80 "PG12" B L 9800 6500 50 
+F81 "PH10" B R 12300 5900 50 
 $EndSheet
 Text Label 9100 6600 0    50   ~ 0
 PC9_TIM8CH4
@@ -597,7 +598,7 @@ Text Label 2400 7100 0    50   ~ 0
 PI9_UART4_RX
 Text Label 2400 7200 0    50   ~ 0
 PH13_UART4_TX
-Text Label 5200 6500 0    50   ~ 0
+Text Label 5200 7400 0    50   ~ 0
 PB13
 Text Label 5200 6600 0    50   ~ 0
 PB12
@@ -723,10 +724,6 @@ Text Notes 6200 7100 0    50   ~ 0
 V2: PInout updated fully from V1
 Text Label 9050 6300 0    50   ~ 0
 PB0_ADC1_IN8
-Text Label 5200 7400 0    50   ~ 0
-PB3_SWO_T2C2
-Text Label 5200 7500 0    50   ~ 0
-PA15_JTDI_T2C1
 Text Label 11800 1400 0    50   ~ 0
 LIPO_BAT_MEAS
 Text Label 12350 2500 0    50   ~ 0
@@ -1236,6 +1233,14 @@ Wire Wire Line
 	13000 2500 12300 2500
 Text Label 9100 6500 0    50   ~ 0
 PG12
-Text Label 2400 7300 0    50   ~ 0
+Text Label 5600 6500 0    50   ~ 0
 PG12
+Wire Wire Line
+	12300 5900 12900 5900
+Text Label 12350 5900 0    50   ~ 0
+PH10
+Text Label 2500 7300 0    50   ~ 0
+PH10
+Text Label 5200 7500 0    50   ~ 0
+PB4
 $EndSCHEMATC

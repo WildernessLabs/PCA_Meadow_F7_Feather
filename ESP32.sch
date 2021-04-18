@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "F7 Micro Meadow"
-Date "2021-01-19"
-Rev "V2.A"
+Date "2021-04-18"
+Rev "V2.B"
 Comp ""
 Comment1 "S.Johnson"
 Comment2 ""

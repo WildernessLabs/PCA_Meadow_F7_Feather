@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 3 5
 Title "F7 Micro Meadow"
-Date "2021-01-19"
-Rev "V2.A"
+Date "2021-04-18"
+Rev "V2.B"
 Comp ""
 Comment1 "S.Johnson"
 Comment2 ""
@@ -1639,7 +1639,6 @@ Text Label 4900 1900 0    50   ~ 0
 VCAP1
 Text Label 4900 2000 0    50   ~ 0
 VCAP2
-NoConn ~ 5700 5700
 Wire Wire Line
 	9000 800  9000 1000
 Wire Wire Line
@@ -1685,6 +1684,10 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 $EndComp
 Wire Wire Line
 	5700 7600 5200 7600
+Text HLabel 5200 7600 0    50   BiDi ~ 0
+PG12
+Wire Wire Line
+	5700 5700 5100 5700
 Wire Wire Line
 	10600 7500 12400 7500
 Wire Bus Line
@@ -1693,6 +1696,8 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
-Text HLabel 5200 7600 0    50   BiDi ~ 0
-PG12
+Text HLabel 5100 5700 0    50   BiDi ~ 0
+PH10
+Text Label 5300 5700 0    50   ~ 0
+TIM5_CH1
 $EndSCHEMATC
