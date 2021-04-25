@@ -1677,7 +1677,7 @@ U 1 1 5D09BECD
 P 8200 5400
 F 0 "U3" H 6000 9800 50  0000 C CNN
 F 1 "STM32F777IIKx" H 6200 9700 50  0000 C CNN
-F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
+F 2 "SLJ_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
 	1    8200 5400
 	1    0    0    -1  

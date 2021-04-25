@@ -438,8 +438,6 @@ Text Notes 3600 3300 0    50   ~ 0
 V2: Changed USB switch. removes discharge circuit. 
 Wire Wire Line
 	5800 1400 5800 1800
-Wire Wire Line
-	7900 1800 7400 1800
 Connection ~ 5800 1800
 $Comp
 L SLJ_Resistor_0201:R_10K_1%_0201 R23
@@ -464,8 +462,6 @@ Wire Wire Line
 	7400 2300 7400 2500
 Wire Wire Line
 	7400 2500 8000 2500
-Wire Wire Line
-	8000 2500 8000 2000
 $Comp
 L SLJ_Resistor_0201:R_10K_1%_0201 R22
 U 1 1 60028206
@@ -507,7 +503,6 @@ F 8 "100mW" H 8105 2909 50  0000 L CNN "PWR DIS"
 $EndComp
 Wire Wire Line
 	8000 2800 8000 2500
-Connection ~ 8000 2500
 Text Label 7500 2500 0    50   ~ 0
 EN_3V3_L
 Text Label 4200 1500 0    50   ~ 0
@@ -548,27 +543,8 @@ F 11 "0402" H 10015 2414 50  0000 L CNN "Size"
 	1    9900 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L SLJ_POWER:LM1117-3.3 U7
-U 1 1 60038D08
-P 10800 1800
-F 0 "U7" H 10800 2042 50  0000 C CNN
-F 1 "LM1117-3.3" H 10800 1951 50  0000 C CNN
-F 2 "SLJ_SMT:SOT-223-3_TabPin2" H 10800 1800 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/lm1117.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1610510452601" H 10800 1800 50  0001 C CNN
-F 4 "LM1117MPX-3.3/NOPB" H 10800 1800 50  0001 C CNN "PN"
-F 5 "Texas Instruments" H 10800 1800 50  0001 C CNN "MF"
-F 6 "" H 10800 1800 50  0000 C CNN "DNI"
-	1    10800 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 1800 9900 1800
 Wire Wire Line
 	9900 1800 9900 2300
-Connection ~ 9900 1800
-Wire Wire Line
-	9900 1800 10500 1800
 Wire Wire Line
 	9900 2600 9900 2800
 $Comp
@@ -602,21 +578,12 @@ F 11 "0402" H 11915 2414 50  0000 L CNN "Size"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11100 1800 11800 1800
-Wire Wire Line
 	11800 1800 11800 2300
-Wire Wire Line
-	10800 2100 10800 2800
-Wire Wire Line
-	10800 2800 9900 2800
 Connection ~ 9900 2800
 Wire Wire Line
 	9900 2800 9900 3000
 Wire Wire Line
-	10800 2800 11800 2800
-Wire Wire Line
 	11800 2800 11800 2600
-Connection ~ 10800 2800
 $Comp
 L SLJ_Capacitor_0201:C_0201_0.1UF_10V_X5R C37
 U 1 1 60043183
@@ -643,9 +610,6 @@ Wire Wire Line
 Connection ~ 11800 2800
 Wire Wire Line
 	12300 2300 12300 1800
-Wire Wire Line
-	12300 1800 11800 1800
-Connection ~ 11800 1800
 $Comp
 L SLJ_Pwr_symbols_Source:+3V3 #PWR047
 U 1 1 60047571
@@ -804,20 +768,6 @@ F 6 "1.0mm" H 4000 650 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SLJ_Transistors:P-CH_SSM3J46CTB Q4
-U 1 1 601B2599
-P 8100 1900
-F 0 "Q4" V 8435 1900 50  0000 C CNN
-F 1 "P-CH_SSM3J46CTB" V 8344 1900 50  0000 C CNN
-F 2 "SLJ_SMT:CST3b_TOS" H 8300 1500 50  0001 L BNN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=1707&prodName=SSM3J46CTB" H 8100 1900 50  0001 L BNN
-F 4 "Toshiba Semiconductor and Storage" H 8300 1400 50  0001 L BNN "MF"
-F 5 "SSM3J46CTB(TPL3)" H 8500 1350 50  0001 C CNN "PN"
-F 6 "1.0mm" H 8300 1250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-	1    8100 1900
-	0    -1   -1   0   
-$EndComp
-$Comp
 L SLJ_Transistors:P-CH_SSM3J46CTB Q1
 U 1 1 601B3CB6
 P 3200 4400
@@ -928,7 +878,7 @@ F 4 "DNI" V 1003 2822 50  0000 C CNN "DNI"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	900  2750 1200 2750
+	900  2750 1000 2750
 Connection ~ 1200 2750
 Wire Wire Line
 	1200 2750 1200 2800
@@ -987,4 +937,67 @@ Wire Wire Line
 Connection ~ 2000 2200
 Wire Wire Line
 	2000 2200 2200 2200
+$Comp
+L SLJ_POWER:LDL212PV33R U7
+U 1 1 6086984E
+P 10800 2000
+F 0 "U7" H 10800 2467 50  0000 C CNN
+F 1 "LDL212PV33R" H 10800 2376 50  0000 C CNN
+F 2 "SLJ_SMT:SON50P200X200X80-7N" H 10800 2000 50  0001 L BNN
+F 3 "https://www.st.com/resource/en/datasheet/ldl212.pdf" H 10800 2000 50  0001 L BNN
+F 4 "0.8 mm" H 10800 2000 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "LDL212PV33R" H 10700 1900 50  0001 C CNN "PN"
+F 6 "STMicroelectronics" H 10800 2000 50  0001 L BNN "MF"
+	1    10800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2800 11500 2800
+Wire Wire Line
+	9900 1800 10200 1800
+Connection ~ 9900 1800
+Wire Wire Line
+	11400 1800 11600 1800
+Connection ~ 11800 1800
+Wire Wire Line
+	11800 1800 12300 1800
+Wire Wire Line
+	11400 2000 11600 2000
+Wire Wire Line
+	11600 2000 11600 1800
+Connection ~ 11600 1800
+Wire Wire Line
+	11600 1800 11800 1800
+Wire Wire Line
+	11400 2200 11500 2200
+Wire Wire Line
+	11500 2200 11500 2800
+Connection ~ 11500 2800
+Wire Wire Line
+	11500 2800 11800 2800
+Wire Wire Line
+	7400 1800 9900 1800
+Wire Wire Line
+	10200 2000 9300 2000
+Text Label 9400 2000 0    50   ~ 0
+EN_3V3
+$Comp
+L SLJ_Mechanical:PAD_0.6X0.6MM TP10
+U 1 1 6089578E
+P 900 3200
+F 0 "TP10" V 1185 3272 50  0000 C CNN
+F 1 "PAD_0.6X0.6MM" V 750 3250 50  0000 C CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.6MM" H 1100 3200 50  0001 C CNN
+F 3 "~" H 1100 3200 50  0001 C CNN
+F 4 "DNI" V 1003 3272 50  0000 C CNN "DNI"
+	1    900  3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	900  3200 1000 3200
+Wire Wire Line
+	1000 3200 1000 2750
+Connection ~ 1000 2750
+Wire Wire Line
+	1000 2750 1200 2750
 $EndSCHEMATC
