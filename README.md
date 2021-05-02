@@ -4,6 +4,12 @@ PCA (Printed Circuit Assembly) design for the F7 Micro development board.
 ![TOP VIEW](PCA_Meadow_F7_Micro_top.png) 
 ![BOTTOM VIEW](PCA_Meadow_F7_Micro_bot.png)
 
+## Drawings
+* [Schematic](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_SCH_V2b.pdf)
+* [Top Assembly](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_MicroV2b.pdf)
+* [Bottom Assembly](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_bot_V2b.pdf)
+
+
 ## Pin Out
 ### Left Header
 
@@ -42,12 +48,7 @@ PCA (Printed Circuit Assembly) design for the F7 Micro development board.
 | `D15` | `PG12` | LPTIM1_IN1, SPI6_MISO, SPDIF_RX1, USART6_RTS, LCD_B4, SDMMC2_D3, FMC_NE4, LCD_B1, EVENTOUT |
 
 ## Change Log
-### Revision V2.A
- * Added castelations for JTAG and ESP32 UART
- * Upgrade flash to 512Mega Bit part
- * Changed the USB power switch to remove the discharge circuit.
-
- ### Revision V2.B
+### Revision V2.B
  * Added pogo test points for usb [Schematic and Layout]
  * Changed part number for flash (U2) [Schematic /BOM ]
  * Made pads for Buttons 10% smaller in each directions [Layout]
@@ -55,4 +56,11 @@ PCA (Printed Circuit Assembly) design for the F7 Micro development board.
  * LDO changed to have lower drop out voltage. 3.3V wasn't regulated when using the batter [Schematic/BOM, and Layout]
  * New LDO has an Enable input so removed the power FET that turned on/off the power to the LDO. Drop out now 0.35V should work 20 - 3.6V. anything above 7V will probably break the LDO under continuous load.
  * Changed pinout of the main headers [Schematic and Layout]
+
+### Revision V2.A
+ * Added castelations for JTAG and ESP32 UART
+ * Upgrade flash to 512Mega Bit part
+ * Changed the USB power switch to remove the discharge circuit.
+
+ 
 
