@@ -1,8 +1,8 @@
 # PCA_Meadow_F7_Micro
 PCA (Printed Circuit Assembly) design for the F7 Micro development board.
 
-! [TOP VIEW] (PCA_Meadow_F7_Micro_top.png) 
-! [BOTTOM VIEW] (PCA_Meadow_F7_Micro_bot.png)
+![TOP VIEW] (PCA_Meadow_F7_Micro_top.png) 
+![BOTTOM VIEW] (PCA_Meadow_F7_Micro_bot.png)
 
 ## Pin Out
 ### Left Header
