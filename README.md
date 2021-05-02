@@ -8,6 +8,7 @@ PCA (Printed Circuit Assembly) design for the F7 Micro development board.
 * [Schematic](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_SCH_V2b.pdf)
 * [Top Assembly](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_MicroV2b.pdf)
 * [Bottom Assembly](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_bot_V2b.pdf)
+* [BOM](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_bom_V2b.xlsx)
 
 
 ## Pin Out
