@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 5 5
 Title "F7 Micro Meadow"
-Date "2021-04-18"
-Rev "V2.B"
+Date "2021-06-06"
+Rev "V2.C"
 Comp ""
 Comment1 "S.Johnson"
 Comment2 ""
@@ -643,7 +643,7 @@ F 1 "S2B-PH-SM4-TB(LF)(SN)" H 1242 4674 50  0000 C CNN
 F 2 "SLJ_Connectors:JST_S2B-PH-SM4-TB(LF)(SN)" H 1300 4400 50  0001 L BNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 1300 4400 50  0001 L BNN
 F 4 "JST" H 1300 4400 50  0001 L BNN "MF"
-F 5 "S2B-ZR-SM4A-TF(LF)(SN)" H 1300 4400 50  0001 L BNN "PN"
+F 5 "S2B-PH-SM4-TB(LF)(SN)" H 1300 4400 50  0001 L BNN "PN"
 	1    1300 4400
 	-1   0    0    -1  
 $EndComp
@@ -688,7 +688,7 @@ Connection ~ 2100 5100
 Wire Wire Line
 	2100 5100 2100 5300
 Wire Wire Line
-	3300 4600 3300 4500
+	3300 4600 3300 4550
 Wire Wire Line
 	3400 4300 6700 4300
 Wire Wire Line
@@ -1000,4 +1000,11 @@ Wire Wire Line
 Connection ~ 1000 2750
 Wire Wire Line
 	1000 2750 1200 2750
+Wire Wire Line
+	3300 4550 3650 4550
+Connection ~ 3300 4550
+Wire Wire Line
+	3300 4550 3300 4500
+Text Label 3450 4550 0    50   ~ 0
++5V_VBUS
 $EndSCHEMATC
