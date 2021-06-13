@@ -1,7 +1,7 @@
 Free Ports
 
 | Name  | Alt Functions               | Additional Functions | Notes |
-|-------|-----------------------------|-----------|
+|-------|-----------------------------|----------------------|-------|
 | `PG3` | `FMC_A13, EVENTOUT`         | |
 | `PE3` | `TRACED0, SAI1_SD_B, FMC_A19, EVENTOUT` | |
 | `PI1` | `TIM8_BKIN2, SPI2_SCK/I2S2_CK, FMC_D25, DCMI_D8, LCD_G6, EVENTOUT` | |
