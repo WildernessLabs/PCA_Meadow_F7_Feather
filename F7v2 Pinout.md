@@ -33,3 +33,16 @@
 | `D13`/`COM1_RX`/`I2S2_SD` | `PB15` | RTC_REFIN, TIM1_CH3N, TIM8_CH3N, USART1_RX, SPI2_MOSI/I2S2_SD, DFSDM_CKIN2, UART4_CTS, TIM12_CH2, SDMMC2_D1, OTG_HS_DP, EVENTOUT |
 | `D14`/`I2S2_WS` | `PB12` | TIM1_BKIN, I2C2_SMBA, SPI2_NSS/I2S2_WS, DFSDM_DATIN1, USART3_CK, UART5_RX, CAN2_RX, OTG_HS_ULPI_D5, ETH_MII_TXD0/ETH_RMII _TXD0, OTG_HS_ID, EVENTOUT |
 | `D15` | `PG12` | LPTIM1_IN1, SPI6_MISO, SPDIF_RX1, USART6_RTS, LCD_B4, SDMMC2_D3, FMC_NE4, LCD_B1, EVENTOUT |
+
+
+# ESP Internals
+
+| F7 Pin Name | STM Pin Name | Function on board |
+|-------------|--------------|-------------------|
+| `ESP_COPI`  | `PI3`        | `SPI2_MOSI`       |
+| `ESP_CIPO`  | `PI2`        | `SPI2_MISO`       |
+| `ESP_CLK`   | `PD3`        | `SPI2_CK`         |
+| `ESP_BOOT`  | `PI10`       | `EVENTOUT`        |
+| `ESP_RST`   | `PF7`        | `EVENTOUT`        |
+| `ESP_UART_RX`| `PD2`       | `UART5_RX`        |
+| `ESP_UART_TX`| `PC12`      | `UART5_TX`        |
