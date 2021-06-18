@@ -1,0 +1,31 @@
+Drill report for C:\Wildernesslabs\PCA_Meadow_F7_Micro\PCA_Meadow_F7_Micro.kicad_pcb
+Created on 6/17/2021 6:00:21 PM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  Top1.Cu                   front
+    L2 :  GND2.Cu                   in1
+    L3 :  Layer3.Cu                 in2
+    L4 :  Layer4.Cu                 in3
+    L5 :  GND5.Cu                   in4
+    L6 :  Bottom6.Cu                back
+
+
+Drill file 'PCA_Meadow_F7_Micro.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.20mm  0.008"  (335 holes)
+    T2  0.25mm  0.010"  (164 holes)
+    T3  0.60mm  0.024"  (12 holes)
+    T4  1.02mm  0.040"  (32 holes)
+    T5  1.52mm  0.060"  (32 holes)
+    T6  2.54mm  0.100"  (4 holes)
+
+    Total plated holes count 579
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
