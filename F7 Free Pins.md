@@ -1,8 +1,12 @@
-Free Ports
+# Free Ports
+
+See Notes for future use in F7 Micro Production Module
+
+
 
 | Name  | Alt Functions               | Additional Functions | Notes |
 |-------|-----------------------------|----------------------|-------|
-| `PG3` | `FMC_A13, EVENTOUT`         | |
+| `PG3` | `FMC_A13, EVENTOUT`         | | Reserve for `ProductID` |
 | `PE3` | `TRACED0, SAI1_SD_B, FMC_A19, EVENTOUT` | |
 | `PI1` | `TIM8_BKIN2, SPI2_SCK/I2S2_CK, FMC_D25, DCMI_D8, LCD_G6, EVENTOUT` | |
 | `PI4` | `TIM8_BKIN, SAI2_MCLK_A, FMC_NBL2, DCMI_D5, LCD_B4, EVENTOUT` | |
@@ -24,8 +28,8 @@ Free Ports
 | `PF9` | `SPI5_MOSI, SAI1_FS_B, UART7_CTS, TIM14_CH1, QUADSPI_BK1_IO1, EVENTOUT` | `ADC3_IN7` | **`SPI5_MOSI`** |
 | `PE6` | `TRACED3, TIM1_BKIN2, TIM9_CH2, SPI4_MOSI, SAI1_SD_A, SAI2_MCLK_B, FMC_A22, DCMI_D7, LCD_G1, EVENTOUT` |
 | `PE5` | `TRACED2, TIM9_CH1, SPI4_MISO, SAI1_SCK_A, DFSDM_CKIN3, FMC_A21, DCMI_D6, LCD_G0, EVENTOUT` |
-| `PC15` | `EVENTOUT` | `OSC32_OUT` | |
-| `PC14` | `EVENTOUT` | `OSC32_IN` | | 
-| `PC13` | `EVENTOUT` | `RTC_TAMP1/ RTC_TS/ RTC_OUT/ WKUP4` | **Wakeup Pin.** |
+| `PC15` | `EVENTOUT` | `OSC32_OUT` | Reserve for `ProductID` |
+| `PC14` | `EVENTOUT` | `OSC32_IN` | Reserve for `ProductID` | 
+| `PC13` | `EVENTOUT` | `RTC_TAMP1/ RTC_TS/ RTC_OUT/ WKUP4` | **Wakeup Pin.** Reserve for `ProductID` |
 | `PA8`  | `MCO1, TIM1_CH1, TIM8_BKIN2, I2C3_SCL, USART1_CK, OTG_FS_SOF, CAN3_RX, UART7_RX, LCD_B3, LCD_R6, EVENTOUT` | |
 | `PA6`  | `TIM1_BKIN, TIM3_CH1, TIM8_BKIN, SPI1_MISO, SPI6_MISO, TIM13_CH1, MDIOS_MDC, DCMI_PIXCLK, LCD_G2, EVENTOUT` | `ADC1_IN6, ADC2_IN6` |
