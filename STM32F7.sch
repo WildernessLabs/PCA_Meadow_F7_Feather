@@ -1671,17 +1671,6 @@ Wire Wire Line
 	8100 1000 8100 800 
 Wire Wire Line
 	7500 1000 7500 800 
-$Comp
-L MCU_ST_STM32F7:STM32F777IIKx U3
-U 1 1 5D09BECD
-P 8200 5400
-F 0 "U3" H 6000 9800 50  0000 C CNN
-F 1 "STM32F777IIKx" H 6200 9700 50  0000 C CNN
-F 2 "SLJ_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
-	1    8200 5400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 7600 5200 7600
 Text HLabel 5200 7600 0    50   BiDi ~ 0
@@ -1700,4 +1689,17 @@ Text HLabel 5100 5700 0    50   BiDi ~ 0
 PH10
 Text Label 5300 5700 0    50   ~ 0
 TIM5_CH1
+$Comp
+L SLJ_MCU:STM32F777IIKx U?
+U 1 1 611AB2EB
+P 8200 5400
+F 0 "U?" H 9350 9850 50  0000 C CNN
+F 1 "STM32F777IIKx" H 9450 9750 50  0000 C CNN
+F 2 "SLJ_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
+F 4 "STM32F777IIK6" H 8150 9981 50  0000 C CNN "PN"
+F 5 "STMicroelectronics" H 8150 9890 50  0000 C CNN "MF"
+	1    8200 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
