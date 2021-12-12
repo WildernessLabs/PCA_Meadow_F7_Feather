@@ -5,10 +5,9 @@ PCA (Printed Circuit Assembly) design for the F7 Micro development board.
 ![BOTTOM VIEW](PCA_Meadow_F7_Micro_bot.png)
 
 ## Drawings
-* [Schematic](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_SCH_V2b.pdf)
-* [Top Assembly](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_MicroV2b.pdf)
-* [Bottom Assembly](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_bot_V2b.pdf)
-* [BOM](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_bom_V2b.xlsx)
+* [Schematic](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_SCH_V2c.pdf)
+* [Top Assembly](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_MicroV2c.pdf)
+* [BOM](https://github.com/WildernessLabs/PCA_Meadow_F7_Micro/blob/main/Assembly/PCA_Meadow_F7_Micro_bom_V2c.xlsx)
 
 
 ## Pin Out
@@ -49,6 +48,14 @@ PCA (Printed Circuit Assembly) design for the F7 Micro development board.
 | `D15` | `PG12` | LPTIM1_IN1, SPI6_MISO, SPDIF_RX1, USART6_RTS, LCD_B4, SDMMC2_D3, FMC_NE4, LCD_B1, EVENTOUT |
 
 ## Change Log
+
+### Revision V2.C1
+* Documentaion Changes to Fab Drawing: 
+  * do not modify pad sizes without permission from Wilderness Labs
+  * fixed errors in stack up and other parts of the notes
+* Cleaned up folders to remove all rev B files and zip up rev 2.C files
+### Revison V2.C 
+* Fixed issue with Batery and VBUS, 
 ### Revision V2.B
  * Added pogo test points for usb [Schematic and Layout]
  * Changed part number for flash (U2) [Schematic /BOM ]

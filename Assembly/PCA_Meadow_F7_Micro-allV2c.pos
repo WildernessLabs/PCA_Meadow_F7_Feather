@@ -1,5 +1,5 @@
-### Module positions - created on 04/28/21 21:45:36 ###
-### Printed by Pcbnew version kicad (5.1.8)-1
+### Module positions - created on 12/11/21 16:47:33 ###
+### Printed by Pcbnew version kicad (5.1.10)-1
 ## Unit = mm, Angle = deg.
 ## Side : All
 # Ref     Val                         Package                                     PosX       PosY       Rot  Side
@@ -83,6 +83,8 @@ R20       R_1K_1%_0201                R_0201                                   1
 R21       R_10K_1%_0201               R_0201                                    6.0960    54.8640  270.0000  top
 R22       R_10K_1%_0201               R_0201                                   19.4945    47.0535   90.0000  top
 R23       R_10K_1%_0201               R_0201                                   18.6055    47.0535   90.0000  top
+REF**     Fiducial_0.5mm_Mask1mm      Fiducial_0.5mm_Mask1mm                   17.7800    19.0500    0.0000  top
+REF**     Fiducial_0.5mm_Mask1mm      Fiducial_0.5mm_Mask1mm                    5.0800    59.6900    0.0000  top
 U1        IS42S16160J-7BLI            TFBGA-54                                 11.4300    48.0060  180.0000  top
 U2        W25Q512JVBIQ                BGA24C100P6X4_800X600X120N                8.8910    18.4150   90.0000  top
 U3        STM32F777IIKx               UFBGA-201_10x10mm_Layout15x15_P0.65mm    11.4300    32.7641   90.0000  top
