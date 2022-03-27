@@ -1,4 +1,4 @@
-update=12/11/2021 3:41:07 PM
+update=2/26/2022 1:00:50 PM
 version=1
 last_client=kicad
 [general]
@@ -12,16 +12,6 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-[schematic_editor]
-version=1
-PageLayoutDescrFile=../Circuit_Part_Libraries/Libraries_Kicad/WildernessLab_pagelayout.kicad_wks
-PlotDirectoryName=Assembly/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=C:/Wildernesslabs/Circuit_Part_Libraries/Libraries_Kicad/WildernessLab_pagelayout.kicad_wks
@@ -313,3 +303,13 @@ uViaDrill=0.1
 dPairWidth=0.127
 dPairGap=0.127
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=../Circuit_Part_Libraries/Libraries_Kicad/WildernessLab_pagelayout.kicad_wks
+PlotDirectoryName=Assembly/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1

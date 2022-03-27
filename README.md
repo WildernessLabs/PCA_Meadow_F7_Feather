@@ -49,6 +49,12 @@ PCA (Printed Circuit Assembly) design for the F7 Micro development board.
 
 ## Change Log
 
+### Revision V2.D
+* Move to Kicad 6.0.2
+* 5V pin is now connected directly to 5V VBUS. Note: If you try to power directly from an external source and connect USB cable you can damage your USB port.
+* More schematic clean up
+* Change name to F7 Feather
+
 ### Revision V2.C1
 * Documentaion Changes to Fab Drawing: 
   * do not modify pad sizes without permission from Wilderness Labs
